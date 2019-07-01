@@ -91,20 +91,39 @@ let submitform = document.getElementById('getintouch-form');
 submitform.addEventListener('submit',(e)=>{
   e.preventDefault();
 
-
-  const formData = new FormData(submitform);
-
-  fetch(submitform.getAttribute('action'),{
-    method:"POST",
-    headers:{
-      'Accept':'application/x-www-form-urlencoded;charset=UTF-8',
-      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-    },
-    body: new URLSearchParams(formData).toString()
-  }).then(res=>{
-    if(res){
-      alert('Form Submitted');
+  if(e.target._name.value==="" && e.target._email.value === "" && e.target._number.value===""){
+   alert("All Fields are Mandatory")
+  }
+  else if(e.target._name.value==="" || e.target._email.value === "" || e.target._number.value===""){
+    if(e.target._name.value===""){
+      alert("Please enter your name");
+    }else if(e.target._email.value===""){
+      alert("Please enter your email address");
     }
-  })
+    else if(e.target._number.value===""){
+      alert("Please enter your mobile number");
+    }
+  }
+  else{
+    const formData = new FormData(submitform);
+
+    fetch(submitform.getAttribute('action'),{
+      method:"POST",
+      headers:{
+        'Accept':'application/x-www-form-urlencoded;charset=UTF-8',
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+      },
+      body: new URLSearchParams(formData).toString()
+    }).then(res=>{
+      if(res){
+        alert(`We'll get in touch with you soon!`);
+      }
+    })
+  }
+  
+
+
+
+  
 
 },false)
