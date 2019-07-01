@@ -87,12 +87,24 @@ $(document).ready(function(){
 });
 
 
-let submitForm = document.getElementById('getintouch-form');
+let submitform = document.getElementById('getintouch-form');
+submitform.addEventListener('submit',(e)=>{
+  e.preventDefault();
 
-submitForm.addEventListener('submit',(event)=>{
 
+  const formData = new FormData(submitform);
 
-console.log("submited");
-event.preventDefault();
+  fetch(submitform.getAttribute('action'),{
+    method:"POST",
+    headers:{
+      'Accept':'application/x-www-form-urlencoded;charset=UTF-8',
+      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+    },
+    body: new URLSearchParams(formData).toString()
+  }).then(res=>{
+    if(res){
+      alert('Form Submitted');
+    }
+  })
 
 },false)
