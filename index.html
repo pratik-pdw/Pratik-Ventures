@@ -223,7 +223,9 @@ a.nav-link{
         <div class="jumbotron">
           <div class="row mb-5">
             <div class="col-md-12">
-              <h4 class="font-weight-bold">Mr. Digambar Wadekar</h4>
+             
+              <h4 class="font-weight-bold"> <!--<img style="width: 200px;height:200px;border-radius: 100px;
+                margin-right: 40px;" src="./assets/images/profile.jpg" alt="">-->Mr. Digambar Wadekar</h4>
             </div>
           </div>
 
@@ -266,26 +268,32 @@ a.nav-link{
                   </div>
                 </div>
             </div>
+            <br><br>
+            <p class="h4">We'll get in touch with you.</p>
+            <form id="getintouch-form" name="contact" method="POST" data-netlify="true">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control">
+                <!-- <small>Don't worry we never share your email with anyone else.</small> -->
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control">
+                <small>Don't worry we never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="number">Mobile No.</label>
+                <input type="text" maxlength="10" class="form-control">
+                <small>We'll call only when you are free</small>
+              </div>
+              <div class="form-group">
+                <label for="number">Preferred time to call</label>
+                <input type="time" class="form-control">
+                <!-- <small>We'll call only when you are free</small> -->
+              </div>
 
-            <form name="contact" method="POST" data-netlify="true">
-              <p>
-                <label>Your Name: <input type="text" name="name" /></label>   
-              </p>
-              <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-              </p>
-              <p>
-                <label>Your Role: <select name="role[]" multiple>
-                  <option value="leader">Leader</option>
-                  <option value="follower">Follower</option>
-                </select></label>
-              </p>
-              <p>
-                <label>Message: <textarea name="message"></textarea></label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
+              <input id="submit-form" type="submit" value="Submit" class="btn btn-dark">
+
             </form>
 
         </div>

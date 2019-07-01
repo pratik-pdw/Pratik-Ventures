@@ -85,3 +85,14 @@ $(document).ready(function(){
     }
   });
 });
+
+
+let submitForm = document.getElementById('getintouch-form');
+
+submitForm.addEventListener('submit',(event)=>{
+
+
+console.log("submited");
+event.preventDefault();
+
+},false)
