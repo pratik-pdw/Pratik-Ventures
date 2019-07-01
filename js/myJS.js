@@ -116,6 +116,7 @@ submitform.addEventListener('submit',(e)=>{
       body: new URLSearchParams(formData).toString()
     }).then(res=>{
       if(res){
+        submitform.reset();
         alert(`We'll get in touch with you soon!`);
       }
     })
