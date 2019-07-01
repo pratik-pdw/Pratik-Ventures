@@ -1,0 +1,210 @@
+html,body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+#side-bar{
+  position: fixed;
+  top:50%;
+  right: -5%;
+  text-transform: uppercase;
+  transform: rotate(270deg);
+  background: #73b369;
+  opacity: 0.7;
+  color: white;
+  padding: 8px;
+  padding-bottom: 35px;
+  /* padding: 8px; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#side-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+#side-bar:hover{
+  opacity: 1;
+}
+
+
+
+
+.hero-image{
+  background-image: url('../assets/images/back1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.hero-text{
+  font-family: 'Work Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+.hero-text p{
+  font-size: 30px;
+}
+.hire-me{
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  background: #174555;
+  color: white;
+}
+.outer{
+  margin: 0;
+  padding: 0;
+}
+.hero-text h1{
+text-shadow: #000000 2px 2px 2px ;
+}
+.hero-text p{
+text-shadow: #000000 2px 2px 3px ;
+}
+
+.container .aboutHead{
+  margin-top: 50px;
+}
+
+.quotes{
+  font-size: 30px;
+}
+
+.horizontal-rule{
+  border: 1px solid #083863;
+  margin-top: 0;
+}
+
+.back-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #415a6b;
+  z-index: 100;
+}
+.back-to-top img{
+  width: 32px;
+  height: 32px;
+}
+
+#services{
+  background: #ebf6f7;
+}
+
+#services .row{
+  background: #a1d4da;
+    padding-top: 52px;
+      padding-bottom: 52px;
+    border-radius: 14px;
+}
+.provide-solution li{
+padding-bottom: 10px;
+}
+
+
+#about-us{
+  font-size: 18px;
+}
+.we-offer p {
+  /* margin-left: -45%; */
+}
+
+footer{
+  background: #384758;
+  color: white;
+}
+
+footer a{
+  color: #a3a4a5;
+}
+
+footer a:hover{
+  color: #cecece;
+  text-decoration: none;
+}
+
+#contact-us i{
+  color: #415a6b
+}
+
+.provide-solution,.we-offer{
+  list-style-type:none;
+}
+
+.navbar-brand{
+  font-weight:bold;
+}
+
+
+@media only screen and (max-width:600px){
+  html{
+    overflow-x:hidden;
+  }
+  #mission-img{
+    margin-left: 25%;
+  }
+  #vision-img{
+    margin-left:25%;
+  }
+  navbar{
+    width: 100vw;
+  }
+
+  .address h5{
+    margin-left:10px;
+  }
+  .hero-image{
+    background-position:left
+  }
+  #home h1{
+    font-size:80px;
+  }
+  #home p{
+    font-size:30px;
+  }
+  .numbers h5{
+    font-size:16px;
+    margin-left:5px;
+  }
+  .address h5{
+    font-size:16px;
+    margin-left:10px;
+  }
+  a.back-to-top{
+    padding: 10px;
+  }
+
+
+  #side-bar{
+    position: fixed;
+    top:30%;
+    right: -14%;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    background: #73b369;
+    opacity: 0.7;
+    color: white;
+    padding: 8px;
+    padding-bottom: 35px;
+    /* padding: 8px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  #side-bar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #side-bar:hover{
+    opacity: 1;
+  }
+
+
+
+}
