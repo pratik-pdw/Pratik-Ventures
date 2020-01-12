@@ -1,204 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Pratik Ventures</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <!-- styles.css -->
-  <link rel="stylesheet" href="./css/styles.css">
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <!-- Google Font Import -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="./css/animate.css">
-  <!-- Font-Awesome Icon Pack -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <head>
+    <title>Pratik Ventures</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- styles.css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <!-- Google Font Import -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <!-- Font-Awesome Icon Pack -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans"
+      rel="stylesheet"
+    />
 
+    <style media="screen">
+      body {
+        font-family: "Work Sans", sans-serif;
+      }
+      a.nav-link {
+        color: rgba(255, 255, 255, 0.8) !important;
+        font-size: 20px;
+      }
+      .outer {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body class="animated-slow fadeIn">
+    <div class="outer container-fluid">
+      <nav
+        class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top"
+        style="transition: top 0.3s; top: -62px;"
+      >
+        <a href="#home" class="navbar-brand">Pratik Ventures</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#show-navbar"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<style media="screen">
-body{
-font-family: 'Work Sans', sans-serif;
-}
-a.nav-link{
-  color: rgba(255, 255, 255, 0.8) !important;
-  font-size: 20px;
-}
- .outer{
-  padding: 0;
-  margin: 0;
-}
-
-
-</style>
-
-</head>
-<body class="animated-slow fadeIn">
-
-<div class="outer container-fluid">
-
-  <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" style="transition: top 0.3s; top: -62px;">
-    <a href="#home" class="navbar-brand">Pratik Ventures</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-navbar" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-      <div class="collapse navbar-collapse" id="show-navbar">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="#home" style="cursor:pointer;" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#about-us" style="cursor:pointer;"class="nav-link"> About Us</a></li>
-          <li class="nav-item"><a href="#services" style="cursor:pointer;"class="nav-link"> Services</a></li>
-          <!-- <li class="nav-item"><a href="#testimonials" style="cursor:pointer;"class="nav-link">Testimonials</a></li> -->
-            <li class="nav-item"><a href="#contact-us" style="cursor:pointer;"class="nav-link">Contact Us</a></li>
-        </ul>
-      </div>
-
-
-  </nav>
-
-
-
-
-  <div id="home" class="hero-image container-fluid">
-      <div class="hero-text text-center">
-        <h1 class="display-2">Pratik Ventures</h1>
-        <p class="lead">Invest your present in safe future.</p>
-
-      </div>
-  </div>
-
-  <section id="about-us" class="mt-5">
-  <div class="container">
-    <br><br><br>
-    <h1 class="display-4 text-center aboutHead">About Us</h1>
-    <p id="about-tag" class="lead text-center"><span class="quotes">"</span>Serving about 400 customers since 1998<span class="quotes">"</span></p>
-    <br><br>
-    <!--Our Mission-->
-      <h3 id="mission-header" class="text-center">Our Mission</h3>
-      <hr width="60" class="horizontal-rule">
-      <br>
-      <div class="row">
-        <div class="col-md-9 mt-5" id="mission-list">
-          <ul class="list-inline ">
-
-            <li><i class="fas fa-check"></i>  Pratik Ventures professionally, positively and motivationally focuses on life insurance and general insurance for clients giving them better quality of service.
+        <div class="collapse navbar-collapse" id="show-navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#home" style="cursor:pointer;" class="nav-link">Home</a>
             </li>
-            <br>
-
-            <li><i class="fas fa-check"></i>  We are committed to provide you best financial plans as per your requirements.</li>
-            <br>
-
-            <li><i class="fas fa-check"></i>  We also provide services for claim settlement and Insurance services in all other segments.
+            <li class="nav-item">
+              <a href="#about-us" style="cursor:pointer;" class="nav-link">
+                About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#services" style="cursor:pointer;" class="nav-link">
+                Services</a
+              >
+            </li>
+            <!-- <li class="nav-item"><a href="#testimonials" style="cursor:pointer;"class="nav-link">Testimonials</a></li> -->
+            <li class="nav-item">
+              <a href="#contact-us" style="cursor:pointer;" class="nav-link"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </div>
-        <div class="col-md-3" id="mission-img">
-            <img src="./assets/images/mission3.png" alt="" class="img-fluid img-responsive" style="height:200px; width:200px;">
+      </nav>
+
+      <div id="home" class="hero-image container-fluid">
+        <div class="hero-text text-center">
+          <h1 class="display-2">Pratik Ventures</h1>
+          <p class="lead">Invest your present in safe future.</p>
         </div>
       </div>
-      <!--Our Vision-->
-      <br><br><br>
-    <h3 id="vision-header" class="text-center">Our Vision</h3>
-    <hr width="60" class="horizontal-rule">
-    <br>
-    <div class="row">
-      <div class="col-md-3" id="vision-img">
-        <img src="./assets/images/vision2.png" alt="" class="img-fluid img-responsive" style="height:200px; width:200px;">
-      </div>
-      <div class="col-md-9 mt-5" id="vision-list" >
-        <ul class="list-inline text-center">
-          <li><i class="fas fa-check"></i>  Our vision is to be the most trusted and preferred LIC Insurance advisor in the society.
-          </li>
-          <br>
-        </ul>
-      </div>
-    </div>
 
-  </div>
-  </section>
+      <section id="about-us" class="mt-5">
+        <div class="container">
+          <br /><br /><br />
+          <h1 class="display-4 text-center aboutHead">About Us</h1>
+          <p id="about-tag" class="lead text-center">
+            <span class="quotes">"</span>Serving about 400 customers since
+            1998<span class="quotes">"</span>
+          </p>
+          <br /><br />
+          <!--Our Mission-->
+          <h3 id="mission-header" class="text-center">Our Mission</h3>
+          <hr width="60" class="horizontal-rule" />
+          <br />
+          <div class="row">
+            <div class="col-md-9 mt-5" id="mission-list">
+              <ul class="list-inline ">
+                <li>
+                  <i class="fas fa-check"></i> Pratik Ventures professionally,
+                  positively and motivationally focuses on life insurance and
+                  general insurance for clients giving them better quality of
+                  service.
+                </li>
+                <br />
 
-  <section id="services" class="mt-5">
-    <div class="container service-container">
-      <br><br><br><br><br>
-      <h1 class="display-4 text-center">
-        Services
-      </h1>
-      <p class="lead text-center"><span class="quotes">"</span>We would be happy to help you achieve your financial goals.<span class="quotes">"</span></p>
-    <br>
-    <div class="row">
-      <div class="col-md-6" style="border-right: 2px solid #f3f3f3;">
-        <h3 id="sol-tag" class="text-center">We provide solutions for</h3>
-        <hr width="60" class="horizontal-rule">
-        <ul class="provide-solution">
+                <li>
+                  <i class="fas fa-check"></i> We are committed to provide you
+                  best financial plans as per your requirements.
+                </li>
+                <br />
 
-          <li><i class="fas fa-square" style="font-size:10px;"></i>  Change of nomination.
-          </li>
-
-          <li><i class="fas fa-square" style="font-size:10px;"></i>  Assignment
-          </li>
-
-          <li><i class="fas fa-square" style="font-size:10px;"></i>  Loan on existing policy.
-          </li>
-
-          <li><i class="fas fa-square" style="font-size:10px;"></i>  Maturity Delay
-          </li>
-
-          <li><i class="fas fa-square" style="font-size:10px;"></i>  Change of address
-          </li>
-
-          <li><i class="fas fa-square" style="font-size:10px;"></i>  Lost Policy
-          </li>
-
-          <li><i class="fas fa-square" style="font-size:10px;"></i>  Lapsed Policy
-          </li>
-
-        </ul>
-      </div>
-        <div class="col-md-6">
-          <h3 id="off-tag" class="text-center">We offer suitable</h3>
-          <hr width="60" class="horizontal-rule">
-          <ul class="we-offer">
-
-            <li><i class="fas fa-square" style="font-size:10px;"></i>  Mediclaim Policies 
-              <span style="cursor:pointer;" id="mediclaim">
-                <i class="fas fa-sort-down"></i></span><br>
-                <p class="alert alert-info mediclaim animated fadeIn"  style="display:none;" >(offers health cover up to the sum insured in the case of an illness or accident leading to hospitalisation.)
-                  <img class="float-right"src="./assets/images/mediclaim.png" alt="">
-                </p>
-
-            </li>
-            <br>
-            <li><i class="fas fa-square" style="font-size:10px;"></i>  Personal Accident Insurance <span style="cursor:pointer;" id="personal-accident"><i class="fas fa-sort-down"></i></span><br>
-              <p class="alert alert-info personal-accident animated fadeIn"  style="display:none;">(which secures you financially against accidental death or permanent total disability)
-                <img class="float-right"src="./assets/images/personal-insurance.png" alt=""></p>
-            </li>
-            <br>
-            <li><i class="fas fa-square" style="font-size:10px;"></i>  Motor Insurance Policies <span style="cursor:pointer;" id="motor-insurance"><i class="fas fa-sort-down"></i></span><br>
-                <p class="alert alert-info motor-insurance animated fadeIn" style="display:none;">(it provides coverage against theft, physical damage, etc to the vehicle that are caused due to the man made or natural calamities)
-                  <img class="float-right"src="./assets/images/motor-insurance.png" alt="">
-                </p>
-            </li>
-            <br>
-            <li><i class="fas fa-square" style="font-size:10px;"></i>  Fire Insurance Policies <span style="cursor:pointer;" id="fire-insurance"><i class="fas fa-sort-down"></i></span><br>
-                <p class="alert alert-info fire-insurance animated fadeIn" style="display:none;">(property insurance covering damage and losses caused by fire.)
-                <img class="float-right" src="./assets/images/fire.png" alt="">
-                </p>
-            </li>
-            <br>
-
-          </ul>
+                <li>
+                  <i class="fas fa-check"></i> We also provide services for
+                  claim settlement and Insurance services in all other segments.
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3" id="mission-img">
+              <img
+                src="./assets/images/mission3.png"
+                alt=""
+                class="img-fluid img-responsive"
+                style="height:200px; width:200px;"
+              />
+            </div>
+          </div>
+          <!--Our Vision-->
+          <br /><br /><br />
+          <h3 id="vision-header" class="text-center">Our Vision</h3>
+          <hr width="60" class="horizontal-rule" />
+          <br />
+          <div class="row">
+            <div class="col-md-3" id="vision-img">
+              <img
+                src="./assets/images/vision2.png"
+                alt=""
+                class="img-fluid img-responsive"
+                style="height:200px; width:200px;"
+              />
+            </div>
+            <div class="col-md-9 mt-5" id="vision-list">
+              <ul class="list-inline text-center">
+                <li>
+                  <i class="fas fa-check"></i> Our vision is to be the most
+                  trusted and preferred LIC Insurance advisor in the society.
+                </li>
+                <br />
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-    <br><br><br><br><br>
-    </div>
-  </section>
+      </section>
 
+      <section id="services" class="mt-5">
+        <div class="container service-container">
+          <br /><br /><br /><br /><br />
+          <h1 class="display-4 text-center">
+            Services
+          </h1>
+          <p class="lead text-center">
+            <span class="quotes">"</span>We would be happy to help you achieve
+            your financial goals.<span class="quotes">"</span>
+          </p>
+          <br />
+          <div class="row">
+            <div class="col-md-6" style="border-right: 2px solid #f3f3f3;">
+              <h3 id="sol-tag" class="text-center">We provide solutions for</h3>
+              <hr width="60" class="horizontal-rule" />
+              <ul class="provide-solution">
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i> Change
+                  of nomination.
+                </li>
 
-  <!-- <section id="testimonials">
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i>
+                  Assignment
+                </li>
+
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i> Loan on
+                  existing policy.
+                </li>
+
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i> Maturity
+                  Delay
+                </li>
+
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i> Change
+                  of address
+                </li>
+
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i> Lost
+                  Policy
+                </li>
+
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i> Lapsed
+                  Policy
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 id="off-tag" class="text-center">We offer suitable</h3>
+              <hr width="60" class="horizontal-rule" />
+              <ul class="we-offer">
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i>
+                  Mediclaim Policies
+                  <span style="cursor:pointer;" id="mediclaim">
+                    <i class="fas fa-sort-down"></i></span
+                  ><br />
+                  <p
+                    class="alert alert-info mediclaim animated fadeIn"
+                    style="display:none;"
+                  >
+                    (offers health cover up to the sum insured in the case of an
+                    illness or accident leading to hospitalisation.)
+                    <img
+                      class="float-right"
+                      src="./assets/images/mediclaim.png"
+                      alt=""
+                    />
+                  </p>
+                </li>
+                <br />
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i> Personal
+                  Accident Insurance
+                  <span style="cursor:pointer;" id="personal-accident"
+                    ><i class="fas fa-sort-down"></i></span
+                  ><br />
+                  <p
+                    class="alert alert-info personal-accident animated fadeIn"
+                    style="display:none;"
+                  >
+                    (which secures you financially against accidental death or
+                    permanent total disability)
+                    <img
+                      class="float-right"
+                      src="./assets/images/personal-insurance.png"
+                      alt=""
+                    />
+                  </p>
+                </li>
+                <br />
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i> Motor
+                  Insurance Policies
+                  <span style="cursor:pointer;" id="motor-insurance"
+                    ><i class="fas fa-sort-down"></i></span
+                  ><br />
+                  <p
+                    class="alert alert-info motor-insurance animated fadeIn"
+                    style="display:none;"
+                  >
+                    (it provides coverage against theft, physical damage, etc to
+                    the vehicle that are caused due to the man made or natural
+                    calamities)
+                    <img
+                      class="float-right"
+                      src="./assets/images/motor-insurance.png"
+                      alt=""
+                    />
+                  </p>
+                </li>
+                <br />
+                <li>
+                  <i class="fas fa-square" style="font-size:10px;"></i> Fire
+                  Insurance Policies
+                  <span style="cursor:pointer;" id="fire-insurance"
+                    ><i class="fas fa-sort-down"></i></span
+                  ><br />
+                  <p
+                    class="alert alert-info fire-insurance animated fadeIn"
+                    style="display:none;"
+                  >
+                    (property insurance covering damage and losses caused by
+                    fire.)
+                    <img
+                      class="float-right"
+                      src="./assets/images/fire.png"
+                      alt=""
+                    />
+                  </p>
+                </li>
+                <br />
+              </ul>
+            </div>
+          </div>
+          <br /><br /><br /><br /><br />
+        </div>
+      </section>
+
+      <!-- <section id="testimonials">
     <div class="container mt-5">
       <br><br><br><br><br>
       <h1 class="display-4 text-center">
@@ -210,349 +326,334 @@ a.nav-link{
     </div>
   </section> -->
 
-
-  <section id="contact-us">
-    <div class="container mt-5">
-      <br><br><br><br><br>
-      <h1 class="display-4 text-center">
-        Contact Us
-      </h1>
-        <p class="lead text-center">
-          <span class="quotes">"</span>We'd love to help<span class="quotes">"</span>
-        </p>
-        <div class="jumbotron">
-          <div class="row mb-5">
-            <div class="col-md-12">
-             
-              <h4 class="font-weight-bold"> <!--<img style="width: 200px;height:200px;border-radius: 100px;
-                margin-right: 40px;" src="./assets/images/profile.jpg" alt="">-->Mr. Digambar Wadekar</h4>
+      <section id="contact-us">
+        <div class="container mt-5">
+          <br /><br /><br /><br /><br />
+          <h1 class="display-4 text-center">
+            Contact Us
+          </h1>
+          <p class="lead text-center">
+            <span class="quotes">"</span>We'd love to help<span class="quotes"
+              >"</span
+            >
+          </p>
+          <div class="jumbotron">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h4 class="font-weight-bold">
+                  <!--<img style="width: 200px;height:200px;border-radius: 100px;
+                margin-right: 40px;" src="./assets/images/profile.jpg" alt="">-->Mr.
+                  Digambar Wadekar
+                </h4>
+              </div>
             </div>
-          </div>
 
             <div class="row">
               <div class="col-md-6 address">
                 <div class="row">
                   <div class="col-1">
-                <i style="font-size:30px;" class="fas fa-address-card"></i>
+                    <i style="font-size:30px;" class="fas fa-address-card"></i>
                   </div>
                   <div class="col-11">
-                  <h5>B-103, Digambar CHSL,<br>Shri Gurudatta Nagar,<br> Phoolpada Road,<br> Virar East (401305)</h5>
+                    <h5>
+                      B-103, Digambar CHSL,<br />Shri Gurudatta Nagar,<br />
+                      Phoolpada Road,<br />
+                      Virar East (401305)
+                    </h5>
                   </div>
                 </div>
               </div>
-                <div class="col-md-6 numbers">
-                  <div class="row">
-                    <div class="col-1">
-                    <i style="font-size:31px;" class="fab fa-whatsapp-square"></i>
-                    </div>
-                    <div class="col-5">
+              <div class="col-md-6 numbers">
+                <div class="row">
+                  <div class="col-1">
+                    <i
+                      style="font-size:31px;"
+                      class="fab fa-whatsapp-square"
+                    ></i>
+                  </div>
+                  <div class="col-5">
                     <h5>9011031866</h5>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-1">
-                    <i style="font-size:31px;" class="fas fa-phone-square"></i>
-                    </div>
-                    <div class="col-5 mt-1">
-                    <h5>9960340844/8329705070</h5>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-1">
-                    <i style="font-size:31px;" class="fas fa-envelope"></i>
-                    </div>
-                    <div class="col-5 mt-1">
-                    <h5>digambarwadekar9@gmail.com</h5>
-                    </div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="col-1">
+                    <i style="font-size:31px;" class="fas fa-phone-square"></i>
+                  </div>
+                  <div class="col-5 mt-1">
+                    <h5>9960340844/8329705070</h5>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-1">
+                    <i style="font-size:31px;" class="fas fa-envelope"></i>
+                  </div>
+                  <div class="col-5 mt-1">
+                    <h5>digambarwadekar9@gmail.com</h5>
+                  </div>
+                </div>
+              </div>
             </div>
-            <br><br>
-            <p class="h4">We'll get in touch with you.</p>
-
-
-            <form id="getintouch-form" action="success.html" name="contact" method="POST" data-netlify="true">
-              <div class="form-group">
-                <label for="name">Name <span class="text-danger">*</span></label>
-                <input id="_name" name="name" type="text" class="form-control">
-                <!-- <small>Don't worry we never share your email with anyone else.</small> -->
-              </div>
-              <div class="form-group">
-                <label for="email">Email<span class="text-danger">*</span></label>
-                <input id="_email" name="email" type="email" class="form-control">
-                <small>Don't worry we never share your email with anyone else.</small>
-              </div>
-              <div class="form-group">
-                <label for="number">Mobile No.<span class="text-danger">*</span></label>
-                <input id="_number" name="number" type="text" maxlength="10" class="form-control">
-                <small>We'll call only when you are free</small>
-              </div>
-              <div class="form-group">
-                <label for="number">Preferred time to call</label>
-                <input type="time" name="time" class="form-control">
-                <!-- <small>We'll call only when you are free</small> -->
-              </div>
-
-              <input id="submit-form" type="submit" value="Submit" class="btn btn-dark">
-
-            </form>
-
-        </div>
-        
-    </div>
-
-    
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mt-5">
-            <h5><i class="far fa-copyright"></i> Pratik Ventures 2019</h5>
-
           </div>
-            <div class="col-md-4 mt-5 mb-3">
-            <h5>Quick Links</h5>
-            <ul class="list-inline">
-              <li><a href="#about-us">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <!-- <li><a href="#services">Testimonials</a></li> -->
-              <li><a href="#contact-us">Contact Us</a></li>
-            </ul>
-            </div>
-              <div class="col-md-4 mt-5 mb-5">
-              <h5>Follow Us</h5>
-             <a target="_blank" href="https://www.facebook.com/digambar.wadekar.5">
-                <i style="font-size:20px;"class="fab fa-facebook-square"></i>
-              </a>
-              <a target="_blank" href="https://www.instagram.com/digambar.wadekar.5/">
-                <i style="font-size:20px;" class="fab fa-instagram"></i>
-              </a>
-              </div>
         </div>
-      </div>
+      </section>
 
+      <footer>
+        <div class="container">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mt-5">
+                <h5><i class="far fa-copyright"></i> Pratik Ventures 2019</h5>
+              </div>
+              <div class="col-md-4 mt-5 mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-inline">
+                  <li><a href="#about-us">About Us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <!-- <li><a href="#services">Testimonials</a></li> -->
+                  <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 mt-5 mb-5">
+                <h5>Follow Us</h5>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/digambar.wadekar.5"
+                >
+                  <i style="font-size:20px;" class="fab fa-facebook-square"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/digambar.wadekar.5/"
+                >
+                  <i style="font-size:20px;" class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-  </footer>
 
+    <span id="side-bar"
+      ><a href="https://wa.me/918329705070">Enquire Now</a></span
+    >
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <!-- Jquery CDN -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript" src="./js/myJS.js"></script>
 
+  <!-- Scroll Reveal Plugin -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-</div>
+  <script>
+    window.sr = ScrollReveal();
 
+    sr.reveal(".hero-text h1", {
+      duration: 3000,
+      origin: "top",
+      distance: "300px"
+    });
 
+    sr.reveal(".hero-text p", {
+      duration: 2000,
+      origin: "bottom",
+      distance: "300px",
+      delay: 2000
+    });
 
+    sr.reveal(".aboutHead", {
+      duration: 3000,
+      origin: "top",
+      viewFactor: 0.2,
+      distance: "100px"
+    });
 
-<span id="side-bar"><a href="https://wa.me/918329705070">Enquire Now</a></span>
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" ></script>
-<!-- Jquery CDN -->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="./js/myJS.js"></script>
+    sr.reveal("#about-tag", {
+      duration: 3000,
+      origin: "bottom",
+      viewFactor: 0.2,
+      distance: "100px"
+    });
 
-<!-- Scroll Reveal Plugin -->
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    sr.reveal("#mission-header", {
+      duration: 3000,
+      viewFactor: 0.2,
+      rotate: { x: 100, y: 100, z: 0 }
+    });
 
-<script>
-  window.sr = ScrollReveal();
+    sr.reveal("#mission-list", {
+      duration: 3000,
+      viewFactor: 0.2,
+      origin: "left",
+      distance: "200px"
+    });
 
-  sr.reveal('.hero-text h1',{
-  duration:3000,
-  origin:'top',
-  distance:'300px'
-  });
+    sr.reveal("#mission-img", {
+      duration: 3000,
+      viewFactor: 0.2,
+      origin: "right",
+      distance: "200px"
+    });
 
-  sr.reveal('.hero-text p',{
-  duration:2000,
-  origin:'bottom',
-  distance:'300px',
-  delay: 2000
-  });
+    sr.reveal("#vision-header", {
+      duration: 3000,
+      viewFactor: 0.2,
+      rotate: { x: 100, y: 100, z: 0 }
+    });
 
-  sr.reveal('.aboutHead',{
-  duration:3000,
-  origin:'top',
-  viewFactor:0.2,
-  distance:'100px'
-  });
+    sr.reveal("#vision-img", {
+      duration: 3000,
+      viewFactor: 0.2,
+      origin: "left",
+      distance: "200px"
+    });
 
-  sr.reveal('#about-tag',{
-  duration:3000,
-  origin:'bottom',
-  viewFactor:0.2,
-  distance:'100px',
+    sr.reveal("#vision-list", {
+      duration: 3000,
+      viewFactor: 0.2,
+      origin: "right",
+      distance: "200px"
+    });
 
-  });
+    sr.reveal("#about-us hr", {
+      duration: 3000,
+      viewFactor: 0.2,
+      origin: "bottom",
+      distance: "100px"
+    });
 
-  sr.reveal('#mission-header',{
-  duration:3000,
-  viewFactor:0.2,
-  rotate: { x: 100, y: 100, z: 0 },
-  });
+    sr.reveal("#services h1", {
+      duration: 3000,
+      origin: "top",
+      viewFactor: 0.2,
+      distance: "100px"
+    });
 
-  sr.reveal('#mission-list',{
-  duration:3000,
-  viewFactor:0.2,
-  origin:'left',
-  distance:'200px'
-  });
+    sr.reveal("#services p", {
+      duration: 2000,
+      origin: "bottom",
+      viewFactor: 0.2,
+      distance: "25px",
+      delay: 1000
+    });
 
-  sr.reveal('#mission-img',{
-  duration:3000,
-  viewFactor:0.2,
-  origin:'right',
-  distance:'200px'
-  });
+    sr.reveal("#sol-tag", {
+      duration: 3000,
+      viewFactor: 0.2,
+      rotate: { x: 100, y: 100, z: 100 },
+      delay: 1000
+    });
 
-  sr.reveal('#vision-header',{
-  duration:3000,
-  viewFactor:0.2,
-  rotate: { x: 100, y: 100, z: 0 },
-  });
+    sr.reveal("#off-tag", {
+      duration: 3000,
+      viewFactor: 0.2,
+      rotate: { x: 100, y: 100, z: 100 },
+      delay: 1000
+    });
 
-  sr.reveal('#vision-img',{
-  duration:3000,
-  viewFactor:0.2,
-  origin:'left',
-  distance:'200px'
-  });
+    sr.reveal(
+      ".provide-solution li",
+      {
+        duration: 2000,
+        origin: "left",
+        viewFactor: 0.2,
+        distance: "200px",
+        delay: 2000
+      },
+      100
+    );
 
-  sr.reveal('#vision-list',{
-  duration:3000,
-  viewFactor:0.2,
-  origin:'right',
-  distance:'200px'
-  });
+    sr.reveal(
+      ".we-offer li",
+      {
+        duration: 2000,
+        origin: "right",
+        viewFactor: 0.2,
+        distance: "200px",
+        delay: 2000
+      },
+      100
+    );
 
-  sr.reveal('#about-us hr',{
-  duration:3000,
-  viewFactor:0.2,
-  origin:'bottom',
-  distance:'100px'
-  });
+    sr.reveal("#services hr", {
+      duration: 2000,
+      origin: "bottom",
+      viewFactor: 0.2,
+      distance: "200px"
+    });
 
-  sr.reveal('#services h1',{
-    duration:3000,
-    origin:'top',
-    viewFactor:0.2,
-    distance:'100px'
-  });
+    sr.reveal("#contact-us h1", {
+      duration: 2000,
+      origin: "top",
+      viewFactor: 0.2,
+      distance: "200px"
+    });
 
-  sr.reveal('#services p',{
-    duration:2000,
-    origin:'bottom',
-    viewFactor:0.2,
-    distance:'25px',
-    delay:1000
-  });
+    sr.reveal("#contact-us p", {
+      duration: 2000,
+      origin: "bottom",
+      viewFactor: 0.2,
+      distance: "200px"
+    });
 
-  sr.reveal('#sol-tag',{
-  duration:3000,
-  viewFactor:0.2,
-  rotate: { x: 100, y: 100, z: 100 },
-  delay:1000
-  });
+    sr.reveal("#contact-us h4", {
+      duration: 2000,
+      origin: "left",
+      viewFactor: 0.2,
+      distance: "150px",
+      delay: 1000
+    });
 
-  sr.reveal('#off-tag',{
-  duration:3000,
-  viewFactor:0.2,
-  rotate: { x: 100, y: 100, z: 100 },
-  delay:1000
-  });
+    sr.reveal("#contact-us i", {
+      duration: 2000,
+      origin: "bottom",
+      viewFactor: 0.2,
+      distance: "150px",
+      delay: 1000
+    });
 
-  sr.reveal('.provide-solution li',{
-    duration:2000,
-    origin:'left',
-    viewFactor:0.2,
-    distance:'200px',
-    delay:2000
-  },100);
+    sr.reveal(
+      ".address",
+      {
+        duration: 2000,
+        origin: "left",
+        viewFactor: 0.2,
+        distance: "150px",
+        delay: 1000
+      },
+      50
+    );
 
-  sr.reveal('.we-offer li',{
-    duration:2000,
-    origin:'right',
-    viewFactor:0.2,
-    distance:'200px',
-    delay:2000
-  },100);
+    sr.reveal(
+      ".numbers",
+      {
+        duration: 2000,
+        origin: "right",
+        viewFactor: 0.2,
+        distance: "150px",
+        delay: 1000
+      },
+      50
+    );
 
-  sr.reveal('#services hr',{
-    duration:2000,
-    origin:'bottom',
-    viewFactor:0.2,
-    distance:'200px',
-
-  });
-
-  sr.reveal('#contact-us h1',{
-    duration:2000,
-    origin:'top',
-    viewFactor:0.2,
-    distance:'200px',
-  });
-
- sr.reveal('#contact-us p',{
-    duration:2000,
-    origin:'bottom',
-    viewFactor:0.2,
-    distance:'200px',
-  });
-
-sr.reveal('#contact-us h4',{
-    duration:2000,
-    origin:'left',
-    viewFactor:0.2,
-    distance:'150px',
-    delay:1000
-  });
-
-sr.reveal('#contact-us i',{
-    duration:2000,
-    origin:'bottom',
-    viewFactor:0.2,
-    distance:'150px',
-    delay:1000
-  });
-
-  sr.reveal('.address',{
-    duration:2000,
-    origin:'left',
-    viewFactor:0.2,
-    distance:'150px',
-    delay:1000
-  },50);
-
-  sr.reveal('.numbers',{
-    duration:2000,
-    origin:'right',
-    viewFactor:0.2,
-    distance:'150px',
-    delay:1000
-  },50);
-
-  sr.reveal('#getintouch-form',{
-    duration:2000,
-    origin:'bottom',
-    viewFactor:0.2,
-    distance:'150px',
-    delay:1000
-  },50);
-
-
-
-
-
-
-
-
-
-</script>
-
-
+    sr.reveal(
+      "#getintouch-form",
+      {
+        duration: 2000,
+        origin: "bottom",
+        viewFactor: 0.2,
+        distance: "150px",
+        delay: 1000
+      },
+      50
+    );
+  </script>
 </html>
